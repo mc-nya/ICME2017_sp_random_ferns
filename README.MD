@@ -1,4 +1,4 @@
-# HOT&JHCH human detector
+# superpixel & random ferns human detector
 
 ## 说明
 
