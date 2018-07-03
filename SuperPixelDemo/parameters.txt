@@ -1,0 +1,59 @@
+Online Multi-Object Detection by Michael Villamizar 2015
+
+parameters:
+numClfrs: 50
+numFerns: 500
+numFeats: 10
+poolSize: 10
+fernSize: 10
+imgChans: 3
+objHeight: 25
+xi: 0.98
+beta: 0.4
+trnSamps: 1000
+updSamps: 30
+imgWidth: 60
+imgHeight: 80
+varphi: 0.15
+minCellSize: 3
+maxCellSize: 6
+imgEqual: 0
+textFont: 2.2
+recThick: 8
+saveImgs: 0
+visuMode: 1
+
+-----------------------------------
+Notes:
+
+Please only modify the values of the above parameters and not the structure, which
+should keep the following format "parameter: value" (without extra spaces)
+
+Below, a brief description of the main important parameters are provided. The values 
+given in the brackets <values> indicate the recomended parameters values.
+
+-----------------------------------
+Parameter Description:
+
+
+numClfrs: num. max. object classifiers : <1-20>
+numFerns: num. random ferns (J) : <50-1000>
+numfeats: num. binary features per ferns (M) : <2-11>
+poolSize: size of ferns parameters pool (R) : <5-20>
+fernSize: spatial fern size (s) : <4-12>
+objHeight: standard window (object) size in u (Bu) : <12-40>
+imgChans: num. image channels (C) : <3>
+xi: sensitivity learning rate (xi) : <0.8-1.2>
+beta: classifier threshold (beta) : <0.5>
+trnSamps: num. initial (training) samples (Nt) : <100-1000>
+upsSamps: num. new (updating) samples (Nu) : <1-100>
+imgHeight: image size in u (Iu) : <480>
+imgWidth: image size in v (Iv) : <640>
+varphi: image shift factor (varphi) : <0.08-0.20>
+minCellSize: min. cell size in image pyramid : <2-5>
+maxCellSize: max. cell size in image pyramid : <20>
+imgEqual: image equalization flag : <0>
+textFont: text font size : <2.2>
+recThick: detection rectangle thickness : <8>
+saveImgs: save images in disk : <0>
+visuMode: visualization mode : <1-3>
